@@ -1,23 +1,24 @@
-package uiautomator.testing.android.example.com.healthcare;
+package uiautomator.testing.android.example.com.healthcare.models;
 
 import java.util.ArrayList;
 
-public class Category {
+public class Program {
 
     private int mId;
     private String mName;
-    private ArrayList<Program> mPrograms;
+    private ArrayList<Exercise> mExercises;
 
-    public Category () {
+    public Program() {
         mId = 0;
         mName = "";
-        mPrograms = new ArrayList<Program>();
+        mExercises = new ArrayList<Exercise>();
+
     }
 
-    public Category(int mId, String mName, ArrayList<Program> mPrograms) {
+    public Program(int mId, String mName, ArrayList<Exercise> mExercises) {
         this.mId = mId;
         this.mName = mName;
-        this.mPrograms = mPrograms;
+        this.mExercises = mExercises;
     }
 
     public int getmId() {
@@ -28,8 +29,8 @@ public class Category {
         return mName;
     }
 
-    public ArrayList<Program> getmPrograms() {
-        return mPrograms;
+    public ArrayList<Exercise> getmExercises() {
+        return mExercises;
     }
 
     public void setmId(int mId) {
@@ -40,16 +41,16 @@ public class Category {
         this.mName = mName;
     }
 
-    public void setmPrograms(ArrayList<Program> mPrograms) {
-        this.mPrograms = mPrograms;
+    public void setmExercises(ArrayList<Exercise> mExercises) {
+        this.mExercises = mExercises;
     }
 
     @Override
     public String toString() {
-        return "Category{" +
+        return "Program{" +
                 "mId=" + mId +
                 ", mName='" + mName + '\'' +
-                ", mPrograms=" + mPrograms +
+                ", mExercises=" + mExercises +
                 '}';
     }
 }

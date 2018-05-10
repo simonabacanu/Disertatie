@@ -1,4 +1,4 @@
-package uiautomator.testing.android.example.com.healthcare;
+package uiautomator.testing.android.example.com.healthcare.models;
 
 public class Event {
 
