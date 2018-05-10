@@ -2,26 +2,26 @@ package uiautomator.testing.android.example.com.healthcare;
 
 public class Recipe {
 
-    private int mIdRecipe;
-    private String mRecipeName;
+    private int mId;
+    private String mName;
     private String mDescription;
     private String mIngredients;
     private int mTime;
 
-    public Recipe(int mIdRecipe, String mRecipeName, String mDescription, String mIngredients, int mTime) {
-        this.mIdRecipe = mIdRecipe;
-        this.mRecipeName = mRecipeName;
+    public Recipe(int mId, String mName, String mDescription, String mIngredients, int mTime) {
+        this.mId = mId;
+        this.mName = mName;
         this.mDescription = mDescription;
         this.mIngredients = mIngredients;
         this.mTime = mTime;
     }
 
-    public int getmIdRecipe() {
-        return mIdRecipe;
+    public int getmId() {
+        return mId;
     }
 
-    public String getmRecipeName() {
-        return mRecipeName;
+    public String getmName() {
+        return mName;
     }
 
     public String getmDescription() {
@@ -36,12 +36,12 @@ public class Recipe {
         return mTime;
     }
 
-    public void setmIdRecipe(int mIdRecipe) {
-        this.mIdRecipe = mIdRecipe;
+    public void setmId(int mId) {
+        this.mId = mId;
     }
 
-    public void setmRecipeName(String mRecipeName) {
-        this.mRecipeName = mRecipeName;
+    public void setmName(String mName) {
+        this.mName = mName;
     }
 
     public void setmDescription(String mDescription) {
@@ -59,8 +59,8 @@ public class Recipe {
     @Override
     public String toString() {
         return "Recipe{" +
-                "mIdRecipe=" + mIdRecipe +
-                ", mRecipeName='" + mRecipeName + '\'' +
+                "mId=" + mId +
+                ", mName='" + mName + '\'' +
                 ", mDescription='" + mDescription + '\'' +
                 ", mIngredients='" + mIngredients + '\'' +
                 ", mTime=" + mTime +

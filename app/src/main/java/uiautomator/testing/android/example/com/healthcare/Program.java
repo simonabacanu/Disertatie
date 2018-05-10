@@ -1,11 +1,12 @@
 package uiautomator.testing.android.example.com.healthcare;
 
-public class Category {
+public class Program {
 
     private int mId;
     private String mName;
 
-    public Category(int mId, String mName) {
+
+    public Program(int mId, String mName) {
         this.mId = mId;
         this.mName = mName;
     }
@@ -28,7 +29,7 @@ public class Category {
 
     @Override
     public String toString() {
-        return "Category{" +
+        return "Program{" +
                 "mId=" + mId +
                 ", mName='" + mName + '\'' +
                 '}';

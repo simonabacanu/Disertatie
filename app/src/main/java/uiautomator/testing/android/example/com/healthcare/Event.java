@@ -2,24 +2,24 @@ package uiautomator.testing.android.example.com.healthcare;
 
 public class Event {
 
-    private int mIdEvent;
-    private String mEventName;
+    private int mId;
+    private String mName;
     private String mEventType;
     private int mTimer;
 
-    public Event(int mIdEvent, String mEventName, String mEventType, int mTimer) {
-        this.mIdEvent = mIdEvent;
-        this.mEventName = mEventName;
+    public Event(int mId, String mName, String mEventType, int mTimer) {
+        this.mId = mId;
+        this.mName = mName;
         this.mEventType = mEventType;
         this.mTimer = mTimer;
     }
 
-    public int getmIdEvent() {
-        return mIdEvent;
+    public int getmId() {
+        return mId;
     }
 
-    public String getmEventName() {
-        return mEventName;
+    public String getmName() {
+        return mName;
     }
 
     public String getmEventType() {
@@ -30,12 +30,12 @@ public class Event {
         return mTimer;
     }
 
-    public void setmIdEvent(int mIdEvent) {
-        this.mIdEvent = mIdEvent;
+    public void setmId(int mId) {
+        this.mId = mId;
     }
 
-    public void setmEventName(String mEventName) {
-        this.mEventName = mEventName;
+    public void setmName(String mName) {
+        this.mName = mName;
     }
 
     public void setmEventType(String mEventType) {
@@ -49,8 +49,8 @@ public class Event {
     @Override
     public String toString() {
         return "Event{" +
-                "mIdEvent=" + mIdEvent +
-                ", mEventName='" + mEventName + '\'' +
+                "mId=" + mId +
+                ", mName='" + mName + '\'' +
                 ", mEventType='" + mEventType + '\'' +
                 ", mTimer=" + mTimer +
                 '}';

@@ -2,24 +2,24 @@ package uiautomator.testing.android.example.com.healthcare;
 
 public class Exercise {
 
-    private int mIdExercise;
-    private String mExerciseName;
+    private int mId;
+    private String mName;
     private int mRepetitions;
     private int mSeries;
 
-    public Exercise(int mIdExercise, String mExerciseName, int mRepetitions, int mSeries) {
-        this.mIdExercise = mIdExercise;
-        this.mExerciseName = mExerciseName;
+    public Exercise(int mId, String mName, int mRepetitions, int mSeries) {
+        this.mId = mId;
+        this.mName = mName;
         this.mRepetitions = mRepetitions;
         this.mSeries = mSeries;
     }
 
-    public int getmIdExercise() {
-        return mIdExercise;
+    public int getmId() {
+        return mId;
     }
 
-    public String getmExerciseName() {
-        return mExerciseName;
+    public String getmName() {
+        return mName;
     }
 
     public int getmRepetitions() {
@@ -30,12 +30,12 @@ public class Exercise {
         return mSeries;
     }
 
-    public void setmIdExercise(int mIdExercise) {
-        this.mIdExercise = mIdExercise;
+    public void setmId(int mId) {
+        this.mId = mId;
     }
 
-    public void setmExerciseName(String mExerciseName) {
-        this.mExerciseName = mExerciseName;
+    public void setmName(String mName) {
+        this.mName = mName;
     }
 
     public void setmRepetitions(int mRepetitions) {
@@ -49,8 +49,8 @@ public class Exercise {
     @Override
     public String toString() {
         return "Exercise{" +
-                "mIdExercise=" + mIdExercise +
-                ", mExerciseName='" + mExerciseName + '\'' +
+                "mId=" + mId +
+                ", mName='" + mName + '\'' +
                 ", mRepetitions=" + mRepetitions +
                 ", mSeries=" + mSeries +
                 '}';
