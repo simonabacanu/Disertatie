@@ -6,8 +6,14 @@ public class Program {
 
     private int mId;
     private String mName;
-
     private ArrayList<Exercise> mExercises;
+
+    public Program() {
+        mId = 0;
+        mName = "";
+        mExercises = new ArrayList<Exercise>();
+
+    }
 
     public Program(int mId, String mName, ArrayList<Exercise> mExercises) {
         this.mId = mId;

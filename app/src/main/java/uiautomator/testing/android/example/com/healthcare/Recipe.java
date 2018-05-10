@@ -8,6 +8,14 @@ public class Recipe {
     private String mIngredients;
     private int mTime;
 
+    public Recipe () {
+        mId = 0;
+        mName = "";
+        mDescription = "";
+        mIngredients = "";
+        mTime = 0;
+    }
+
     public Recipe(int mId, String mName, String mDescription, String mIngredients, int mTime) {
         this.mId = mId;
         this.mName = mName;

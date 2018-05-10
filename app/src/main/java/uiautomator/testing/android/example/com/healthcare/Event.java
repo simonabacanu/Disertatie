@@ -7,6 +7,13 @@ public class Event {
     private String mEventType;
     private int mTimer;
 
+    public Event () {
+        mId = 0;
+        mName = "";
+        mEventType = "";
+        mTimer = 0;
+    }
+
     public Event(int mId, String mName, String mEventType, int mTimer) {
         this.mId = mId;
         this.mName = mName;

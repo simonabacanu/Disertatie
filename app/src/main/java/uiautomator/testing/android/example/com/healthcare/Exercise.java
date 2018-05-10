@@ -7,6 +7,13 @@ public class Exercise {
     private int mRepetitions;
     private int mSeries;
 
+    public Exercise () {
+        mId = 0;
+        mName = "";
+        mRepetitions = 0;
+        mSeries = 0;
+    }
+
     public Exercise(int mId, String mName, int mRepetitions, int mSeries) {
         this.mId = mId;
         this.mName = mName;

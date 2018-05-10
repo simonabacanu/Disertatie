@@ -6,8 +6,13 @@ public class Category {
 
     private int mId;
     private String mName;
-
     private ArrayList<Program> mPrograms;
+
+    public Category () {
+        mId = 0;
+        mName = "";
+        mPrograms = new ArrayList<Program>();
+    }
 
     public Category(int mId, String mName, ArrayList<Program> mPrograms) {
         this.mId = mId;
