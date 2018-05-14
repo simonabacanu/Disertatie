@@ -126,6 +126,9 @@ public class MainActivity extends AppCompatActivity
             case FRAGMENT_RECIPE:
                 fragment = new RecipeFragment();
                 break;
+            case FRAGMENT_HEALTH:
+                fragment = new HealthFragment();
+                break;
             default:
                 break;
         }
