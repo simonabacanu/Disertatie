@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import static uiautomator.testing.android.example.com.healthcare.Constants.FRAGMENT_CATEGORY;
 import static uiautomator.testing.android.example.com.healthcare.Constants.FRAGMENT_EXERCISE;
+import static uiautomator.testing.android.example.com.healthcare.Constants.FRAGMENT_HEALTH;
 import static uiautomator.testing.android.example.com.healthcare.Constants.FRAGMENT_PROGRAM;
 import static uiautomator.testing.android.example.com.healthcare.Constants.FRAGMENT_RECIPE;
 
@@ -88,11 +89,13 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_health) {
             // Handle the camera action
+            loadFragment(FRAGMENT_HEALTH);
 
         } else if (id == R.id.nav_workout) {
             loadFragment(FRAGMENT_CATEGORY);
 
         } else if (id == R.id.nav_recipes) {
+            loadFragment(FRAGMENT_RECIPE);
 
         } else if (id == R.id.nav_manage) {
 
