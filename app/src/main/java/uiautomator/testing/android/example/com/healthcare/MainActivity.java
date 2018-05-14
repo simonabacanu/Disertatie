@@ -3,8 +3,8 @@ package uiautomator.testing.android.example.com.healthcare;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
+import android.app.Fragment;
+//import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -86,11 +86,13 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.nav_health) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_workout) {
+            loadFragment(FRAGMENT_CATEGORY);
+
+        } else if (id == R.id.nav_recipes) {
 
         } else if (id == R.id.nav_manage) {
 
@@ -105,10 +107,10 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    public void LoadFragment(String fragmentName){
+    public void loadFragment(String fragmentName){
+        Fragment fragment = null;
 
         switch(fragmentName) {
-            Fragment fragment = null;
             case FRAGMENT_CATEGORY:
                 fragment = new CategoryFragment();
                 break;
@@ -125,12 +127,7 @@ public class MainActivity extends AppCompatActivity
                 break;
         }
 
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-
-        //    transaction.replace(R.id., fragmentName);
-        transaction.addToBackStack(null);
-
-        transaction.commit();
+        getFragmentManager().beginTransaction().replace(R.id.lay, fragment).commit();
 
     }
 }
