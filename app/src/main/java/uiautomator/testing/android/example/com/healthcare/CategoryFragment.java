@@ -80,7 +80,7 @@ public class CategoryFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 MainActivity mainActivity = (MainActivity) getActivity();
-                mainActivity.loadFragment(FRAGMENT_CATEGORY);
+                mainActivity.loadFragment(FRAGMENT_PROGRAM);
             }
         });
 

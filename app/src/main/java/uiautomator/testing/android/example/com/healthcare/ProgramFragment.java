@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import static uiautomator.testing.android.example.com.healthcare.Constants.FRAGMENT_CATEGORY;
+import static uiautomator.testing.android.example.com.healthcare.Constants.FRAGMENT_EXERCISE;
 import static uiautomator.testing.android.example.com.healthcare.Constants.FRAGMENT_PROGRAM;
 
 
@@ -74,13 +75,13 @@ public class ProgramFragment extends Fragment {
         View view =  inflater.inflate(R.layout.fragment_program, container, false);
 
         mButton = view.findViewById(R.id.button2);
-    /*    mButton.setOnClickListener(new View.OnClickListener() {
+        mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 MainActivity mainActivity = (MainActivity) getActivity();
-                mainActivity.loadFragment(FRAGMENT_PROGRAM);
+                mainActivity.loadFragment(FRAGMENT_EXERCISE);
             }
-        }); */
+        });
 
         return view;
 
